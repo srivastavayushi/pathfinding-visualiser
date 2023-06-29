@@ -1,0 +1,29 @@
+.top{
+    display: flex;
+    flex-direction: column;
+    background: #34495D;
+    color:antiquewhite;
+}
+.header{
+    font-size : 40px;
+    padding: 5px;
+    font-weight: 700;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.navitems{
+    font-size : 18px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.navitems:hover{
+    background-color: #1ABC9B;
+    color:antiquewhite;
+}

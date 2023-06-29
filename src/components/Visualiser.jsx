@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Node from './Node/index.jsx';
+import Header from './Header/index.jsx';
 
 import './Visualiser.css';
 
@@ -22,12 +23,16 @@ export default function Visualiser() {
   console.log(nodes);
 
   return (
-    <div className="grid">
+    <div>
+      <Header/>
+      <div className="grid">
       {nodes.map((row, rowIdx)=>{
         return <div key={rowIdx}>
           {row.map((node,nodeIdx)=><Node key={nodeIdx}/>)}
         </div>
       })}
     </div>
+    </div>
+    
   )
 }
